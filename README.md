@@ -1,6 +1,16 @@
 # Vérif Scoot
 
-Prototype Android **MVP0**, en français, utilisable hors ligne sur un seul téléphone. Il organise les inspections départ/retour et propose des changements visuels à vérifier. Il ne certifie pas des dommages et n’a pas encore été évalué sur un corpus de scooters réels.
+## En bref
+
+**Ce que c’est :** un prototype Android hors ligne pour documenter une inspection de scooter au départ et au retour.
+
+**À quoi il sert :** capturer les quatre faces, comparer deux états et préparer une revue des changements visuels avant la clôture d’une location.
+
+**Ce qui a été réalisé :** parcours MVP0, caméra, stockage local, comparaison d’images, revue et export. Le parcours a été testé sur émulateur avec des fixtures synthétiques.
+
+**Technologies :** Kotlin, Jetpack Compose, CameraX, SQLite, OpenCV et traitement d’images local.
+
+Il ne certifie pas des dommages et n’a pas encore été évalué sur des scooters réels.
 
 <p>
   <img src="docs/screenshots/capture.png" width="240" alt="Inspection départ avec mire synthétique sur émulateur" />
