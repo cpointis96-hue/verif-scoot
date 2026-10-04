@@ -2,9 +2,19 @@
 
 Prototype Android **MVP0**, en français, utilisable hors ligne sur un seul téléphone. Il organise les inspections départ/retour et propose des changements visuels à vérifier. Il ne certifie pas des dommages et n’a pas encore été évalué sur un corpus de scooters réels.
 
+<p>
+  <img src="docs/screenshots/capture.png" width="240" alt="Inspection départ avec mire synthétique sur émulateur" />
+  <img src="docs/screenshots/review.png" width="240" alt="Revue avant et après avec médias synthétiques" />
+  <img src="docs/screenshots/closed.png" width="240" alt="Location clôturée et export des médias" />
+</p>
+
+Captures réelles du parcours instrumenté sur émulateur Android. Les images colorées sont des fixtures synthétiques, pas des scooters ni des médias clients. Le projet combine Kotlin, Jetpack Compose, CameraX, SQLite, OpenCV et traitement d’images local.
+
 ## Installer l’APK
 
-Le fichier de livraison est `artifacts/verif-scoot-debug.apk`. Copiez-le sur votre Android (Android 8.1 ou plus récent), ouvrez-le et autorisez l’installation depuis cette source si Android le demande. Ouvrez **Vérif Scoot**, puis autorisez la caméra au moment de filmer. Aucun compte, microphone, GPS ou accès Internet nécessaire.
+Le script de build produit `artifacts/verif-scoot-debug.apk`. Les sources téléchargées avec **Code → Download ZIP** n’incluent pas ce binaire : construire l’APK avec les instructions ci-dessous. La publication d’une release téléchargeable est en préparation ; aucun lien de release non vérifié n’est annoncé ici.
+
+Une fois l’APK construit, copiez-le sur votre Android (Android 8.1 ou plus récent), ouvrez-le et autorisez l’installation depuis cette source si Android le demande. Ouvrez **Vérif Scoot**, puis autorisez la caméra au moment de filmer. Aucun compte, microphone, GPS ou accès Internet nécessaire.
 
 L’APK debug est signé pour les essais. Conservez vos exports : désinstaller l’application efface ses données privées. Une mise à jour avec la même clé via `adb install -r` conserve normalement les inspections.
 
@@ -72,4 +82,5 @@ Remplacer `SERIAL` par celui affiché par `adb devices`. Pour un bug, joindre mo
 - `docs/BLUEPRINT.md` : étude de marché sourcée, décisions et protocole de validation.
 - `docs/superpowers/plans/2026-09-13-scooter-mvp.md` : plan initial et critères.
 - `docs/VALIDATION.md` : statut réel du livrable.
+- `docs/PORTFOLIO-VERIFICATION.md` : reconstruction, tests et captures réalisés pour la préparation du portfolio.
 - `docs/THIRD_PARTY.md` : dépendances et provenance des fixtures.
