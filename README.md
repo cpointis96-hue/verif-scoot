@@ -84,3 +84,7 @@ Remplacer `SERIAL` par celui affiché par `adb devices`. Pour un bug, joindre mo
 - `docs/VALIDATION.md` : statut réel du livrable.
 - `docs/PORTFOLIO-VERIFICATION.md` : reconstruction, tests et captures réalisés pour la préparation du portfolio.
 - `docs/THIRD_PARTY.md` : dépendances et provenance des fixtures.
+
+## Dépôt et téléchargement
+
+[Voir le dépôt](https://github.com/cpointis96-hue/verif-scoot) · [Télécharger les sources ZIP](https://github.com/cpointis96-hue/verif-scoot/archive/HEAD.zip). Le ZIP contient les sources ; il faut construire l’APK selon les instructions ci-dessus.
