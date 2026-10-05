@@ -54,13 +54,11 @@ Ni les sites vendeurs ni une recherche web ne démontrent le product-market fit.
 
 Le marché couvre déjà trois niveaux : documentation, inspection IA smartphone et capture matérielle contrôlée. La différenciation défendable est un corpus longitudinal scooter autorisé, un protocole rapide et une intégration au travail réel. « IA + photos » ne suffit pas.
 
-La recherche n’a pas établi l’existence d’un benchmark public représentatif de scooters de location en Asie du Sud-Est, pris avant/après avec variations de météo, de téléphone et de lieu. C’est une absence de preuve dans cette recherche, pas la preuve qu’aucun dataset n’existe.
-
 Achat-versus-construction : demander ultérieurement aux fournisseurs un essai aveugle avec 50 paires, export des données, tarif minimum, offline, rétention, région d’hébergement et droit d’utiliser les annotations. Acheter si le coût total et la qualité mesurée battent le prototype. Les interfaces privées des concurrents restent à essayer.
 
 ## 6. Persona principal
 
-Employé d’une agence de 30 scooters, téléphone Android partagé, interruptions fréquentes, mains parfois humides, lumière extérieure, connexion inconstante. La langue initiale du prototype est le français pour son propriétaire ; avant pilote, traduire dans la langue effective des employés, vraisemblablement anglais et langue locale après entretien. Ne pas supposer que la Thaïlande, le Laos, Bali et le Vietnam ont les mêmes contrats ou pratiques.
+Employé d’une agence de 30 scooters, téléphone Android partagé, interruptions fréquentes, mains parfois humides, lumière extérieure, connexion inconstante. La langue initiale du prototype est le français pour son propriétaire ; avant pilote, confirmer la langue des employés et les contrats et pratiques de l’agence par entretien. Ce profil de travail reste une hypothèse à tester.
 
 Décideur économique : responsable d’agence. Utilisateur secondaire : client qui vérifie le constat. Hypothèses non encore observées : 30 à 90 secondes acceptables par capture et intérêt pour un rapport exportable.
 

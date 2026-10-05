@@ -1,5 +1,58 @@
 # Vérif Scoot
 
+## Le projet en quelques mots
+
+Je développe un prototype d'application Android pour conserver une trace de l'état d'un scooter avant et après une location. L'utilisateur enregistre les quatre faces au départ, recommence au retour, puis compare les images et exporte un rapport.
+
+Le travail comprend la capture, le stockage sur le téléphone, la comparaison visuelle et le parcours de revue. Une personne reste responsable de regarder les images et de décider ce qu'elles montrent.
+
+## Comment le découvrir
+
+Les trois captures ci-dessous montrent le parcours testé sur un téléphone simulé sur ordinateur, avec des images de test. Elles se consultent sans installation.
+
+L'application complète nécessite un téléphone Android. Le dossier ZIP contient son code ; le fichier d'installation Android n'est pas encore proposé en téléchargement direct. Les instructions de construction plus bas s'adressent à une personne équipée pour développer une application.
+
+## À quoi cela sert dans une agence de location ?
+
+Le besoin est de retrouver les mêmes vues d'un véhicule entre son départ et son retour, de comparer les deux états et de conserver les observations avec les images. L'application aide l'opérateur à documenter son contrôle ; elle ne décide pas de la responsabilité du client.
+
+## Le parcours construit
+
+1. Créer une fiche scooter et ouvrir une location.
+2. Enregistrer l'avant, la droite, l'arrière et la gauche au départ.
+3. Refaire les mêmes vues au retour.
+4. Examiner les images avant/après et les suggestions de comparaison.
+5. Valider sa revue, clôturer la location et exporter le rapport et les médias.
+
+Les données restent sur le téléphone et le prototype fonctionne sans compte ni connexion Internet. Le travail comprend aussi la reprise d'une inspection interrompue et la conservation des vues déjà confirmées.
+
+## Où en est le projet ?
+
+Un prototype Android installable pour les essais a été construit et ouvert sur un téléphone simulé sur ordinateur. Le parcours et la comparaison ont été testés avec des médias synthétiques. Les captures ci-dessous montrent ces essais, avec des images colorées de test.
+
+Le prototype n'a pas encore été évalué sur de vrais scooters en agence. Il ne mesure pas une rayure et ne garantit pas la détection des dommages. Les résultats demandent une revue humaine, notamment lorsque le cadrage ou la lumière changent.
+
+<p>
+  <img src="docs/screenshots/capture.png" width="240" alt="Capture de départ avec images de test" />
+  <img src="docs/screenshots/review.png" width="240" alt="Comparaison avant et après sur émulateur" />
+  <img src="docs/screenshots/closed.png" width="240" alt="Clôture et export de l'inspection de test" />
+</p>
+
+## Ce qu'il reste à faire
+
+- Tester sur un téléphone physique et sur des scooters réels avec un protocole de prise de vue régulier.
+- Mesurer les changements réellement repérés, les fausses alertes et les cas où la comparaison devient impossible.
+- Faire essayer le parcours à des utilisateurs d'agence pour vérifier sa durée et sa simplicité.
+- Vérifier les performances, l'autonomie et la fiabilité des exports.
+- Préparer un fichier d'installation téléchargeable et décider des fonctions utiles après ces essais.
+
+## Ce que ce travail m'a appris
+
+Passer d'un besoin métier à un parcours mobile, définir un protocole comparable avant/après, organiser le stockage des preuves et distinguer une aide visuelle d'une décision fiable. Une [recherche sur les solutions existantes](docs/BLUEPRINT.md) accompagne la conception.
+
+<details>
+<summary>Captures, installation et détails techniques du prototype</summary>
+
 ## En bref
 
 **Ce que c’est :** un prototype Android hors ligne pour documenter une inspection de scooter au départ et au retour.
@@ -11,12 +64,6 @@
 **Technologies :** Kotlin, Jetpack Compose, CameraX, SQLite, OpenCV et traitement d’images local.
 
 Il ne certifie pas des dommages et n’a pas encore été évalué sur des scooters réels.
-
-<p>
-  <img src="docs/screenshots/capture.png" width="240" alt="Inspection départ avec mire synthétique sur émulateur" />
-  <img src="docs/screenshots/review.png" width="240" alt="Revue avant et après avec médias synthétiques" />
-  <img src="docs/screenshots/closed.png" width="240" alt="Location clôturée et export des médias" />
-</p>
 
 Captures réelles du parcours instrumenté sur émulateur Android. Les images colorées sont des fixtures synthétiques, pas des scooters ni des médias clients. Le projet combine Kotlin, Jetpack Compose, CameraX, SQLite, OpenCV et traitement d’images local.
 
@@ -98,3 +145,5 @@ Remplacer `SERIAL` par celui affiché par `adb devices`. Pour un bug, joindre mo
 ## Dépôt et téléchargement
 
 [Voir le dépôt](https://github.com/cpointis96-hue/verif-scoot) · [Télécharger les sources ZIP](https://github.com/cpointis96-hue/verif-scoot/archive/HEAD.zip). Le ZIP contient les sources ; il faut construire l’APK selon les instructions ci-dessus.
+
+</details>
